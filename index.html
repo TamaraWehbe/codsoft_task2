@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Landing Page</title>
+    <link rel="stylesheet" href="./lib/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.ico"type="image/x-icon">
+    <meta name="theme-color" content="#0f1456">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Tutoring Page</h1>
+    </header>
+    <section class="section section--light">
+        <div class="section__content">
+            <div class="banner">
+                <img src="./images/logo.jpg" alt="Logo" class="banner__logo">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="icongroup">
+                    <a href="index.html" class="icongroup__icon"title="Facebook Page">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="index.html" class="icongroup__icon"title="Twitter Page">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+                    <a href="index.html" class="icongroup__icon"title="Instagram Page">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="index.html" class="icongroup__icon"title="LinkedIn Page">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="index.html" class="icongroup__icon"title="Check out our Youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div id="about" class="section__content">
+            <h2>About Us</h2>
+            <img src="./images/TUTORS.jpeg" alt="Tutoring Pic">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in labore dolore itaque ducimus architecto, voluptates quasi quod sapiente rem. Quas, sequi dolorum tempora praesentium reprehenderit quidem maiores eos culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum commodi assumenda quae soluta animi est. Nam qui blanditiis repellat earum libero magni aliquam vitae? Incidunt facilis assumenda atque iure sequi?</p>
+        </div>
+    </section>
+    <section class="section section--light">
+        <div class="section__content" id="services">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <div class="grid__item">
+                    <img src="./images/private.jpg" alt="Private">
+                    <div class="grid__text">Private Tutoring</div>
+                </div>
+                <div class="grid__item">
+                    <img src="./images/group.jpg" alt="Group">
+                    <div class="grid__text">Group Tutoring</div>
+                </div>
+                <div class="grid__item">
+                    <img src="./images/remote.jpeg" alt="Remote">
+                    <div class="grid__text">Remote Tutoring</div>
+                </div>
+            </div>
+            <a href="index.html" class="button" title="More Info" >More Info<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="section__content">
+            <h2>Testimonials</h2>
+            <div id="testimonial-carousel">
+                <div class="testimonial-card">
+                    <p>"I struggled with web development until I found this tutoring service. Their personalized approach really helped me grasp difficult concepts."</p>
+                    <p>- John Andrews</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The tutors here are amazing! They made learning fun and engaging, and I saw a significant improvement in my grades."</p>
+                    <p>- Jane williams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section--light" id="contact">
+        <div class="section__content">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tutoring Services</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
