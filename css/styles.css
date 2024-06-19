@@ -1,0 +1,246 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size:16px;
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height:1.6;
+    font-size:1.05rem;
+    margin:20px 0;
+}
+strong{
+    font-weight:bold;
+}
+header {
+    padding:20px 0;
+    text-align: center;
+    background-color: #0f1456;
+    color: #a4edff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:#a4edff;
+}
+.about{
+    background:url(../images/background.jpg);
+    background-size:cover;
+}
+.banner{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0;
+}
+.banner ul {
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner ul li {
+    margin:0 .4rem;
+}
+
+.banner ul li a {
+    text-decoration: none;
+    color:#0f1456;
+    letter-spacing: 1px;
+    padding:15px 20px;
+    font-size: 20px;
+    border-radius:20px;
+    transition:all ease .3s;
+}
+.banner ul li a:hover {
+    color:#a4edff;
+    background-color:#0f1456;
+}
+.banner__logo{
+    height: 50px;
+    display:block;
+    border-radius:25px;
+}
+section {
+    width:100%;
+    padding: 50px 20px;
+    background:#0f1456;
+    color:#a4edff;
+    text-align: center;
+}
+.section--light{
+    background:#a4edff;
+    color: #0f1456;
+}
+.section--light h1,.section--light h2{
+    background:#a4edff;
+    color: #0f1456;
+}
+.section__content{
+    text-align:center;
+    max-height:600px;
+    margin: 0 auto;
+    padding:30px;
+}
+.icongroup{
+    display: flex;
+    align-items: center;
+}
+.icongroup__icon{
+    color:#0f1456;
+    text-decoration: none;
+    font-size:1.75rem;
+    transition:color 0.15s;
+}
+.icongroup__icon:not(:last-child){
+    margin-right:15px;
+}
+.icongroup__icon:hover{
+    color:#6564fd;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form button {
+    background-color: #0f1456;
+    color: #a4edff;
+    cursor: pointer;
+    border: 1px solid #0f1456;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#contact-form button:hover {
+    background-color: #a4edff;
+    color: #0f1456;
+    border-color: #0f1456;
+}
+
+#about img{
+    max-width:450px;
+    float:left;
+}
+#about p{
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 1rem;
+}
+
+#services .grid__item{
+    width:30%;
+    padding:20px;
+    box-sizing:border-box;
+    background-color:#0f1456;
+    margin:10px;
+    color:#a4edff;
+    border-radius:30px;
+}
+.grid__item img{
+    width:95%;
+    height:85%;
+}
+.grid__icon{
+    font-size:5em;
+}
+.grid__text{
+    margin-top:20px;
+    font: size 1.15em;
+    font-weight: bold;
+}
+.button{
+    display:inline-block;
+    padding: 8px 18px;
+    color:#0f1456;
+    background:#a4edff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #0f1456;
+    border-radius:5px;
+    transition: color 0.15s, background 0.15s, border-color 1.15s;
+}
+.button:hover{
+    color:#a4edff;
+    border-color:#a4edff;
+    background: #0f1456;
+}
+.button i{
+    margin-left:10px;
+}
+footer{
+    background: #0f1456;
+    color:#a4edff;
+    text-align: center;
+}
+footer p{
+    padding:0;
+    margin:0;
+}
+footer, header{
+    width:100%;
+    padding-right:40px;
+}
+@media screen and (max-width:1000px){
+    footer,header,section{
+        width:1000px;
+    }
+}
+@media screen and (max-width:260px){
+    .grid{
+        font-size:0.85rem;
+    }
+    .grid__item{
+        width:50%;
+    }
+    .banner{
+        width: 50%;
+    }
+}
